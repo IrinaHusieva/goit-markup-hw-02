@@ -1,0 +1,19 @@
+:root {
+  /* BG COLORS */
+  --primary-bg-cl: #2e2f42;
+  --secondary-bg-cl: #f4f4fd;
+  --team-bg-cl: #ffffff;
+  /* TXT COLORS */
+  --primary-txt-cl: #2e2f42;
+  --secondary-txt-cl: #434455;
+  --logo-txt-cl: #4d5ae5;
+  --second-logo-txt-color: #f4f4fd;
+  --footer-txt-cl: #e7e9fc;
+  --hero-txt-cl: #ffffff;
+}
+body {
+  font-family: 'Roboto', sans-serif;
+}
+.logo-style {
+  font-family: 'Raleway', sans-serif;
+}
