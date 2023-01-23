@@ -79,6 +79,9 @@ body {
 .button:focus {
   background-color: var(--button-bg-cl);
 }
+.button:active {
+  background-color: var(--hover-button-cl);
+}
 .txt {
   font-weight: 400;
   color: var(--secondary-txt-cl);
