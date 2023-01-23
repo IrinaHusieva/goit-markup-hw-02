@@ -29,8 +29,8 @@
   font-style: normal;
   color: var(--secondary-txt-cl);
 }
-.header-link :hover,
-.link:focus {
+
+.header-link.current {
   color: var(--active-txt-cl);
 }
 body {
@@ -75,8 +75,8 @@ body {
   padding: 16px 32px;
   gap: 10px;
 }
-.button :hover,
-:focus {
+.button:hover,
+.button:focus {
   background-color: var(--button-bg-cl);
 }
 .txt {
@@ -111,4 +111,8 @@ ul {
 }
 .footer-logo {
   color: var(--footer-txt-cl);
+}
+.portfolio-button {
+  font-weight: 500;
+  letter-spacing: 0.04em;
 }
