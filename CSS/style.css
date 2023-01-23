@@ -1,3 +1,16 @@
+.visually-hidden {
+  position: absolute;
+  width: 1px;
+  height: 1px;
+  margin: -1px;
+  border: 0;
+  padding: 0;
+
+  white-space: nowrap;
+  clip-path: inset(100%);
+  clip: rect(0 0 0 0);
+  overflow: hidden;
+}
 :root {
   /* BG COLORS */
   --primary-bg-cl: #2e2f42;
@@ -14,6 +27,7 @@
   --hero-txt-cl: #ffffff;
   --hover-button-cl: #404bbf;
 }
+/* NAV */
 .logo-style {
   font-family: 'Raleway', sans-serif;
   font-style: normal;
@@ -21,7 +35,6 @@
   font-size: 18px;
   line-height: calc(24 / 18);
 }
-
 .logo-design {
   color: var(--logo-txt-cl);
 }
@@ -29,7 +42,11 @@
   font-style: normal;
   color: var(--secondary-txt-cl);
 }
-
+.header-link:hover,
+.header-link:focus {
+  color: var(--active-txt-cl);
+  cursor: pointer;
+}
 .header-link.current {
   color: var(--active-txt-cl);
 }
@@ -47,12 +64,15 @@ body {
 .header-nav {
   font-weight: 500;
 }
-
 .address {
   font-style: normal;
   color: var(--secondary-txt-cl);
 }
-
+.address:hover,
+.address:focus {
+  color: var(--active-txt-cl);
+  cursor: pointer;
+}
 .hero {
   color: var(--hero-txt-cl);
   background-color: var(--primary-bg-cl);
@@ -64,40 +84,15 @@ body {
   background-color: var(--button-bg-cl);
   color: var(--hero-txt-cl);
   font-weight: 500;
-  display: flex;
-  align-items: center;
-  letter-spacing: 0.04em;
-  box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.15);
-  border-radius: 4px;
-  display: flex;
-  flex-direction: row;
-  align-items: flex-start;
-  padding: 16px 32px;
-  gap: 10px;
 }
 .button:hover,
 .button:focus {
-  background-color: var(--button-bg-cl);
-}
-.button:active {
   background-color: var(--hover-button-cl);
+  cursor: pointer;
 }
 .txt {
   font-weight: 400;
   color: var(--secondary-txt-cl);
-}
-.visually-hidden {
-  position: absolute;
-  width: 1px;
-  height: 1px;
-  margin: -1px;
-  border: 0;
-  padding: 0;
-
-  white-space: nowrap;
-  clip-path: inset(100%);
-  clip: rect(0 0 0 0);
-  overflow: hidden;
 }
 .our-team {
   background-color: var(--secondary-bg-cl);
@@ -115,7 +110,26 @@ ul {
 .footer-logo {
   color: var(--footer-txt-cl);
 }
-.portfolio-button {
+/* PORTFOLIO */
+.portfolio-btn {
+  font-family: inherit;
   font-weight: 500;
   letter-spacing: 0.04em;
+  line-height: 1.5;
+  background-color: var(--secondary-bg-cl);
+  color: var(--logo-txt-cl);
+
+  border: 1px solid var(--hero-txt-cl);
+  border-radius: 4px;
+}
+.portfolio-btn:hover,
+.portfolio-btn:focus {
+  color: var(--hero-txt-cl);
+  background-color: var(--hover-button-cl);
+  cursor: pointer;
+}
+.portfolio-h {
+  font-weight: 500;
+  font-size: 20px;
+  line-height: calc(24 / 20);
 }
