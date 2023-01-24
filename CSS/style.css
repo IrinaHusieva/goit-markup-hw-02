@@ -42,8 +42,6 @@
   color: var(--logo-txt-cl);
 }
 .address {
-  font-style: normal;
-  font-size: 16px;
   line-height: calc(24 / 16);
   color: var(--secondary-txt-cl);
 }
@@ -66,7 +64,6 @@ body {
 }
 .header-nav {
   font-weight: 500;
-  font-size: 16px;
   line-height: calc(24 / 16);
 }
 .address {
@@ -90,10 +87,10 @@ body {
   background-color: var(--button-bg-cl);
   color: var(--hero-txt-cl);
   font-weight: 500;
-  font-size: 16px;
   line-height: calc(24 / 16);
   font-family: 'Roboto';
   letter-spacing: 0.04em;
+  font-size: 16px;
 }
 .button:hover,
 .button:focus {
@@ -101,7 +98,6 @@ body {
   cursor: pointer;
 }
 .li-title {
-  font-weight: 700;
   font-size: 36px;
   line-height: calc(40 / 36);
 }
@@ -111,7 +107,6 @@ body {
   line-height: calc(24 / 20);
 }
 .txt {
-  font-size: 16px;
   line-height: calc(24 / 16);
   color: var(--secondary-txt-cl);
 }
@@ -129,7 +124,6 @@ ul {
   color: var(--footer-txt-cl);
 }
 .txt-foot {
-  font-size: 16px;
   line-height: calc(24 / 16);
 }
 .footer-logo {
@@ -137,14 +131,20 @@ ul {
 }
 /* PORTFOLIO */
 .portfolio-btn {
-  font-family: inherit;
+  font-family: 'Roboto';
+  font-style: normal;
   font-weight: 500;
-  letter-spacing: 0.04em;
-  line-height: 1.5;
+  font-size: 16px;
+  line-height: calc(24 / 16);
   background-color: var(--secondary-bg-cl);
   color: var(--logo-txt-cl);
   border: 1px solid var(--hero-txt-cl);
   border-radius: 4px;
+  padding: 12px 24px;
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  align-items: center;
 }
 .portfolio-btn:hover,
 .portfolio-btn:focus {
