@@ -33,8 +33,6 @@
   font-weight: 800;
   font-size: 18px;
   line-height: calc(24 / 18);
-  display: flex;
-  align-items: center;
   letter-spacing: 0.03em;
   text-transform: uppercase;
 }
@@ -82,13 +80,14 @@ body {
 .h-title {
   line-height: calc(60 / 56);
   font-size: 56px;
+  text-align: center;
 }
 .button {
   background-color: var(--button-bg-cl);
   color: var(--hero-txt-cl);
   font-weight: 500;
   line-height: calc(24 / 16);
-  font-family: 'Roboto';
+  font-family: 'Roboto', sans-serif;
   letter-spacing: 0.04em;
   font-size: 16px;
 }
@@ -109,6 +108,9 @@ body {
 .txt {
   line-height: calc(24 / 16);
   color: var(--secondary-txt-cl);
+}
+.h-h {
+  text-align: center;
 }
 .our-team {
   background-color: var(--secondary-bg-cl);
@@ -131,20 +133,13 @@ ul {
 }
 /* PORTFOLIO */
 .portfolio-btn {
-  font-family: 'Roboto';
-  font-style: normal;
+  font-family: 'Roboto', sans-serif;
   font-weight: 500;
   font-size: 16px;
   line-height: calc(24 / 16);
   background-color: var(--secondary-bg-cl);
   color: var(--logo-txt-cl);
   border: 1px solid var(--hero-txt-cl);
-  border-radius: 4px;
-  padding: 12px 24px;
-  display: flex;
-  flex-direction: row;
-  justify-content: center;
-  align-items: center;
 }
 .portfolio-btn:hover,
 .portfolio-btn:focus {
